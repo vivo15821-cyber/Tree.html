@@ -1,56 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
 
-<!-- ต้นไม้ -->
+<body>
 
-<!-- ลำต้น -->
-<a-cylinder
-    position="-6 1.2 -3"
-    radius="0.15"
-    height="2.4"
-    color="#A66A2C">
-</a-cylinder>
+<a-scene>
 
-<!-- กิ่งซ้าย -->
-<a-cylinder
-    position="-6.3 2.2 -3"
-    radius="0.05"
-    height="1"
-    rotation="0 0 35"
-    color="#A66A2C">
-</a-cylinder>
+    <!-- กล้อง -->
+    <a-camera position="0 2 8"></a-camera>
 
-<!-- กิ่งขวา -->
-<a-cylinder
-    position="-5.7 2.2 -3"
-    radius="0.05"
-    height="1"
-    rotation="0 0 -35"
-    color="#A66A2C">
-</a-cylinder>
+    <!-- ท้องฟ้า -->
+    <a-sky color="white"></a-sky>
 
-<!-- พุ่มใบเขียวเข้ม -->
-<a-octahedron
-    position="-6.5 3 -3"
-    radius="0.6"
-    color="#228B22">
-</a-octahedron>
+    <!-- พื้น -->
+    <a-plane position="0 0 0"
+             rotation="-90 0 0"
+             width="20"
+             height="20"
+             color="#4CAF50">
+    </a-plane>
 
-<!-- พุ่มใบเขียวอ่อน -->
-<a-octahedron
-    position="-5.8 3.4 -3"
-    radius="0.8"
-    color="#9ACD32">
-</a-octahedron>
+    <!-- ลำต้น -->
+    <a-cylinder position="0 1.2 -3"
+                radius="0.15"
+                height="2.4"
+                color="#A66A2C">
+    </a-cylinder>
 
-<!-- พุ่มใบเขียวเข้ม -->
-<a-octahedron
-    position="-5.2 2.8 -3"
-    radius="0.6"
-    color="#2E8B57">
-</a-octahedron>
+    <!-- กิ่งซ้าย -->
+    <a-cylinder position="-0.3 2.2 -3"
+                radius="0.05"
+                height="1"
+                rotation="0 0 35"
+                color="#A66A2C">
+    </a-cylinder>
 
-<!-- พุ่มใบเขียวอ่อนเล็ก -->
-<a-octahedron
-    position="-5.5 2.4 -2.7"
-    radius="0.35"
-    color="#ADFF2F">
-</a-octahedron>
+    <!-- กิ่งขวา -->
+    <a-cylinder position="0.3 2.2 -3"
+                radius="0.05"
+                height="1"
+                rotation="0 0 -35"
+                color="#A66A2C">
+    </a-cylinder>
+
+    <!-- ใบไม้ -->
+    <a-sphere position="-0.5 3 -3"
+              radius="0.5"
+              color="#228B22">
+    </a-sphere>
+
+    <a-sphere position="0 3.4 -3"
+              radius="0.7"
+              color="#9ACD32">
+    </a-sphere>
+
+    <a-sphere position="0.6 2.9 -3"
+              radius="0.5"
+              color="#2E8B57">
+    </a-sphere>
+
+</a-scene>
+
+</body>
+</html>
+
